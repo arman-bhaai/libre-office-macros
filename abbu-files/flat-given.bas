@@ -15,16 +15,16 @@ dim values(9) as string
 rem ----------------------------------------------------------------------
 rem //assigned values to the 'Keys' array
 
-keys(0) = "<>"
-keys(1) = "<>"
-keys(2) = "<>"
-keys(3) = "<>"
-keys(4) = "<>"
-keys(5) = "<>"
-keys(6) = "<>"
-keys(7) = "<>"
-keys(8) = "<>"
-keys(9) = "<>"
+keys(0) = "<flat-no>"
+keys(1) = "<given-title>"
+keys(2) = "<given-name>"
+keys(3) = "<given-designation>"
+keys(4) = "<given-sharok>"
+keys(5) = "<given-date>"
+keys(6) = "<given-borabor-person>"
+keys(7) = "<given-borabor-designation>"
+keys(8) = "<given-accountant-officer>"
+keys(9) = "<given-associative-officer>"
 rem ----------------------------------------------------------------------
 rem //assigned values to the 'Values' array
 
