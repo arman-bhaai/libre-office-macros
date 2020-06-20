@@ -8,6 +8,37 @@ rem define variables
 dim document   as object
 dim dispatcher as object
 rem ----------------------------------------------------------------------
+rem //array declaration with 10 variable for keys and values
+
+dim keys(9) as string
+dim values(9) as string
+rem ----------------------------------------------------------------------
+rem //assigned values to the 'Keys' array
+
+keys(0) = "<>"
+keys(1) = "<>"
+keys(2) = "<>"
+keys(3) = "<>"
+keys(4) = "<>"
+keys(5) = "<>"
+keys(6) = "<>"
+keys(7) = "<>"
+keys(8) = "<>"
+keys(9) = "<>"
+rem ----------------------------------------------------------------------
+rem //assigned values to the 'Values' array
+
+values(0) = ""
+values(1) = ""
+values(2) = ""
+values(3) = ""
+values(4) = ""
+values(5) = ""
+values(6) = ""
+values(7) = ""
+values(8) = ""
+values(9) = ""
+rem ----------------------------------------------------------------------
 rem get access to the document
 document   = ThisComponent.CurrentController.Frame
 dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
@@ -61,9 +92,9 @@ args5(9).Value = 0
 args5(10).Name = "SearchItem.SearchFlags"
 args5(10).Value = 65536
 args5(11).Name = "SearchItem.SearchString"
-args5(11).Value = "<flat-no>"
+args5(11).Value = keys(0)
 args5(12).Name = "SearchItem.ReplaceString"
-args5(12).Value = "111 111 111"
+args5(12).Value = values(0)
 args5(13).Name = "SearchItem.Locale"
 args5(13).Value = 255
 args5(14).Name = "SearchItem.ChangedChars"
@@ -140,9 +171,9 @@ args10(9).Value = 0
 args10(10).Name = "SearchItem.SearchFlags"
 args10(10).Value = 65536
 args10(11).Name = "SearchItem.SearchString"
-args10(11).Value = "<given-title>"
+args10(11).Value = keys(1)
 args10(12).Name = "SearchItem.ReplaceString"
-args10(12).Value = "222 222 222"
+args10(12).Value = values(1)
 args10(13).Name = "SearchItem.Locale"
 args10(13).Value = 255
 args10(14).Name = "SearchItem.ChangedChars"
@@ -219,9 +250,9 @@ args15(9).Value = 0
 args15(10).Name = "SearchItem.SearchFlags"
 args15(10).Value = 65536
 args15(11).Name = "SearchItem.SearchString"
-args15(11).Value = "<given-name>"
+args15(11).Value = keys(2)
 args15(12).Name = "SearchItem.ReplaceString"
-args15(12).Value = "333 333 333"
+args15(12).Value = values(2)
 args15(13).Name = "SearchItem.Locale"
 args15(13).Value = 255
 args15(14).Name = "SearchItem.ChangedChars"
@@ -298,9 +329,9 @@ args20(9).Value = 0
 args20(10).Name = "SearchItem.SearchFlags"
 args20(10).Value = 65536
 args20(11).Name = "SearchItem.SearchString"
-args20(11).Value = "<given-designation>"
+args20(11).Value = keys(3)
 args20(12).Name = "SearchItem.ReplaceString"
-args20(12).Value = "444"
+args20(12).Value = values(3)
 args20(13).Name = "SearchItem.Locale"
 args20(13).Value = 255
 args20(14).Name = "SearchItem.ChangedChars"
@@ -377,9 +408,9 @@ args25(9).Value = 0
 args25(10).Name = "SearchItem.SearchFlags"
 args25(10).Value = 65536
 args25(11).Name = "SearchItem.SearchString"
-args25(11).Value = "<given-sharok>"
+args25(11).Value = keys(4)
 args25(12).Name = "SearchItem.ReplaceString"
-args25(12).Value = "555"
+args25(12).Value = values(4)
 args25(13).Name = "SearchItem.Locale"
 args25(13).Value = 255
 args25(14).Name = "SearchItem.ChangedChars"
@@ -456,9 +487,9 @@ args30(9).Value = 0
 args30(10).Name = "SearchItem.SearchFlags"
 args30(10).Value = 65536
 args30(11).Name = "SearchItem.SearchString"
-args30(11).Value = "<given-date>"
+args30(11).Value = keys(5)
 args30(12).Name = "SearchItem.ReplaceString"
-args30(12).Value = "666"
+args30(12).Value = values(5)
 args30(13).Name = "SearchItem.Locale"
 args30(13).Value = 255
 args30(14).Name = "SearchItem.ChangedChars"
@@ -535,9 +566,9 @@ args35(9).Value = 0
 args35(10).Name = "SearchItem.SearchFlags"
 args35(10).Value = 65536
 args35(11).Name = "SearchItem.SearchString"
-args35(11).Value = "<given-borabor-person>"
+args35(11).Value = keys(6)
 args35(12).Name = "SearchItem.ReplaceString"
-args35(12).Value = "777"
+args35(12).Value = values(6)
 args35(13).Name = "SearchItem.Locale"
 args35(13).Value = 255
 args35(14).Name = "SearchItem.ChangedChars"
@@ -614,9 +645,9 @@ args40(9).Value = 0
 args40(10).Name = "SearchItem.SearchFlags"
 args40(10).Value = 65536
 args40(11).Name = "SearchItem.SearchString"
-args40(11).Value = "<given-borabor-designation>"
+args40(11).Value = keys(7)
 args40(12).Name = "SearchItem.ReplaceString"
-args40(12).Value = "888"
+args40(12).Value = values(7)
 args40(13).Name = "SearchItem.Locale"
 args40(13).Value = 255
 args40(14).Name = "SearchItem.ChangedChars"
@@ -693,9 +724,9 @@ args45(9).Value = 0
 args45(10).Name = "SearchItem.SearchFlags"
 args45(10).Value = 65536
 args45(11).Name = "SearchItem.SearchString"
-args45(11).Value = "<given-accountant-officer>"
+args45(11).Value = keys(8)
 args45(12).Name = "SearchItem.ReplaceString"
-args45(12).Value = "999"
+args45(12).Value = values(8)
 args45(13).Name = "SearchItem.Locale"
 args45(13).Value = 255
 args45(14).Name = "SearchItem.ChangedChars"
@@ -772,9 +803,9 @@ args50(9).Value = 0
 args50(10).Name = "SearchItem.SearchFlags"
 args50(10).Value = 65536
 args50(11).Name = "SearchItem.SearchString"
-args50(11).Value = "<given-associative-officer>"
+args50(11).Value = keys(9)
 args50(12).Name = "SearchItem.ReplaceString"
-args50(12).Value = "000"
+args50(12).Value = keys(9)
 args50(13).Name = "SearchItem.Locale"
 args50(13).Value = 255
 args50(14).Name = "SearchItem.ChangedChars"
